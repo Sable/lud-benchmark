@@ -1,0 +1,29 @@
+{
+    "type": "implementation",
+    "short-name":"c",
+    "description":"Reference C implementation ported from Rodinia suite",
+    "language":"c",
+    "core-source-files":[
+       { "file": "./lud_base.c"}
+    ],
+    "runner-source-file": { "file": "./runner.c" },
+    "runner-arguments": [
+        {
+            "prefix":"-s ",
+            "value": { "expand": "/experiment/input-size" }
+        }
+    ],
+    "libraries":[
+        { "file": "./common/ostrich_twister_rand.c" },
+        { "file": "./common/common.c" }
+    ],
+    "include-directories":[
+        { "file": "./common/"}
+    ],
+    "dependencies": [
+        { 
+            "source": "https://github.com/Sable/ostrich-c-implementation-common.git",
+            "destination": { "file": "./common" }
+        }
+    ]
+}

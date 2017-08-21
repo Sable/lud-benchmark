@@ -1,0 +1,21 @@
+{
+    "type": "implementation",
+    "short-name":"matlab",
+    "description":"Matlab native implementation",
+    "language":"matlab",
+    "core-source-files":[
+    ],
+    "runner-source-file": { "file": "./runner.m" },
+    "runner-arguments": [
+        { "expand": "/experiment/input-size" }
+    ],
+    "libraries": [
+        { "file": "./common/fletcherSum.m" }
+    ],
+    "dependencies": [
+        { 
+            "source": "https://github.com/Sable/ostrich-matlab-implementation-common.git",
+            "destination": { "file": "./common" }
+        }
+    ]
+}

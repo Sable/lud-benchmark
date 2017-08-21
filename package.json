@@ -1,0 +1,24 @@
+{
+  "name": "lud",
+  "version": "1.0.0",
+  "description": "LUD (LU Decomposition) ========================",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sable/lud-benchmark.git"
+  },
+  "author": "Erick Lavoie",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Sable/lud-benchmark/issues"
+  },
+  "homepage": "https://github.com/Sable/lud-benchmark#readme",
+  "dependencies": {
+    "ndarray": "^1.0.18",
+    "ndarray-ops": "^1.2.2",
+    "ostrich-twister-prng": "git+https://github.com/Sable/ostrich-twister-prng.js.git"
+  }
+}

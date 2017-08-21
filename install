@@ -50,6 +50,9 @@ for (var k in benchmark['input-size']) {
   ops.mulseq(a,10000)
   ops.flooreq(a)
 
+  // Ensure the file exists
+  fs.writeFileSync(inputFilePath, '')
+
   for (var i = 0; i < size; i++) {
     var row = a.data.slice(i*size, i*size+size).join(',') + '\n'
     fs.appendFileSync(inputFilePath, row)
